@@ -1,15 +1,15 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-const Review = () => {
+const AboutUs = () => {
   return (
     <View style={styles.body}>
-      <Text>Review</Text>
+      <Text>AboutUs</Text>
     </View>
   );
 };
 
-export default Review;
+export default AboutUs;
 
 const styles = StyleSheet.create({
   body: {

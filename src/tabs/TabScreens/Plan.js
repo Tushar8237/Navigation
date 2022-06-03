@@ -4,7 +4,7 @@ import React from "react";
 const Plan = () => {
   return (
     <View style={styles.body}>
-      <Text>Notification</Text>
+      <Text>Plan your next vacation</Text>
     </View>
   );
 };
@@ -16,5 +16,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#d0f6fb",
   },
 });
