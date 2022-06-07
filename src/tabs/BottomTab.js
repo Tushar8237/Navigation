@@ -1,11 +1,16 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { MaterialCommunityIcons, MaterialIcons } from "@expo/vector-icons";
+import {
+  MaterialCommunityIcons,
+  MaterialIcons,
+  FontAwesome5,
+} from "@expo/vector-icons";
 import Home from "./TabScreens/Home";
 import Search from "./TabScreens/Search";
 import Plan from "./TabScreens/Plan";
 import Review from "./TabScreens/Review";
+import Profile from "./TabScreens/Profile";
 
 const Tab = createBottomTabNavigator();
 
@@ -16,7 +21,6 @@ const BottomTab = () => {
       screenOptions={{
         tabBarActiveTintColor: "#000000",
         headerShown: false,
-        tabBarActiveBackgroundColor: "#d0f6fb",
       }}
     >
       <Tab.Screen
@@ -59,7 +63,17 @@ const BottomTab = () => {
         options={{
           tabBarLabel: "Review",
           tabBarIcon: ({ color, size }) => (
-            <MaterialIcons name="rate-review" size={size} color={color} />
+            <MaterialIcons name="rate-review" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Profile"
+        component={Profile}
+        options={{
+          tabBarLabel: "Profile",
+          tabBarIcon: ({ color, size }) => (
+            <FontAwesome5 name="user-circle" color={color} size={size} />
           ),
         }}
       />

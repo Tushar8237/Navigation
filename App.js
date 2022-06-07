@@ -15,7 +15,14 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  const firebaseConfig = {};
+  const firebaseConfig = {
+    apiKey: "AIzaSyAnQQT09_G_Q6FVS30ZtWYAPPQZDjreXGE",
+    authDomain: "login-87f06.firebaseapp.com",
+    projectId: "login-87f06",
+    storageBucket: "login-87f06.appspot.com",
+    messagingSenderId: "387508274024",
+    appId: "1:387508274024:web:639f731dc8d45fa1258cdd",
+  };
 
   //Checking if firebase has been initialized
   if (!firebase.apps.length) {

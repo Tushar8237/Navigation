@@ -30,12 +30,12 @@ const Search = () => {
           }}
           styles={{
             textInput: {
+              backgroundColor: "#e6e6e6",
               borderRadius: 10,
               fontWeight: "700",
               marginTop: 7,
             },
             textInputContainer: {
-              backgroundColor: "#eee",
               flexDirection: "row",
               alignItems: "center",
               width: "99%",
@@ -53,6 +53,6 @@ const styles = StyleSheet.create({
   body: {
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#d0f6fb",
+    backgroundColor: "#fff",
   },
 });
