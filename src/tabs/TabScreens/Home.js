@@ -11,7 +11,7 @@ import {
   Image,
 } from "react-native";
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
     <ScrollView>
       <View>
@@ -48,7 +48,10 @@ const Home = () => {
                 marginTop: 20,
               }}
             />
-            <Pressable style={{}} onPress={() => console.warn("btn clicked")}>
+            <Pressable
+              style={{}}
+              onPress={() => navigation.navigate("Activity")}
+            >
               <Text
                 style={{
                   zIndex: 100,
@@ -76,7 +79,10 @@ const Home = () => {
                 marginTop: 20,
               }}
             />
-            <Pressable style={{}} onPress={() => console.warn("btn clicked")}>
+            <Pressable
+              style={{}}
+              onPress={() => navigation.navigate("Activity")}
+            >
               <Text
                 style={{
                   zIndex: 100,
@@ -106,7 +112,10 @@ const Home = () => {
                 marginTop: 10,
               }}
             />
-            <Pressable style={{}} onPress={() => console.warn("btn clicked")}>
+            <Pressable
+              style={{}}
+              onPress={() => navigation.navigate("Activity")}
+            >
               <Text
                 style={{
                   zIndex: 100,
@@ -134,7 +143,10 @@ const Home = () => {
                 marginTop: 10,
               }}
             />
-            <Pressable style={{}} onPress={() => console.warn("btn clicked")}>
+            <Pressable
+              style={{}}
+              onPress={() => navigation.navigate("Activity")}
+            >
               <Text
                 style={{
                   zIndex: 100,
@@ -244,3 +256,5 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
 });
+
+// onPress={() => console.warn("btn clicked")}

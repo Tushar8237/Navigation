@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import BottomTab from "./src/tabs/BottomTab";
 import SignUpScreen from "./src/loginscreens/SignUp";
 import Loginscreen from "./src/loginscreens/Login";
+import Activity from "./src/activity/Activity";
 import firebase from "firebase/app";
 import "firebase/auth";
 // import DrawerTab from "./src/tabs/DrawerTab";
@@ -45,6 +46,11 @@ export default function App() {
           <Stack.Screen
             name="Home"
             component={BottomTab}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Activity"
+            component={Activity}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>
