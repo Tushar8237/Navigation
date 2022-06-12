@@ -7,6 +7,9 @@ import BottomTab from "./src/tabs/BottomTab";
 import SignUpScreen from "./src/loginscreens/SignUp";
 import Loginscreen from "./src/loginscreens/Login";
 import Activity from "./src/activity/Activity";
+import FoodList from "./src/activity/FoodList";
+import ThingsToDo from "./src/activity/ThingsToDo";
+import Destinations from "./src/activity/Destinations";
 import firebase from "firebase/app";
 import "firebase/auth";
 // import DrawerTab from "./src/tabs/DrawerTab";
@@ -51,6 +54,21 @@ export default function App() {
           <Stack.Screen
             name="Activity"
             component={Activity}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="FoodList"
+            component={FoodList}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="ThingsToDo"
+            component={ThingsToDo}
+            options={{ headerShown: false }}
+          />
+          <Stack.Screen
+            name="Destinations"
+            component={Destinations}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>
