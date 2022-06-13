@@ -9,7 +9,8 @@ import Loginscreen from "./src/loginscreens/Login";
 import Activity from "./src/activity/Activity";
 import FoodList from "./src/activity/FoodList";
 import ThingsToDo from "./src/activity/ThingsToDo";
-import Destinations from "./src/activity/Destinations";
+// import Destinations from "./src/activity/Destinations";
+import PaymentPage from "./src/activity/post/PaymentPage";
 import firebase from "firebase/app";
 import "firebase/auth";
 // import DrawerTab from "./src/tabs/DrawerTab";
@@ -67,8 +68,8 @@ export default function App() {
             options={{ headerShown: false }}
           />
           <Stack.Screen
-            name="Destinations"
-            component={Destinations}
+            name="PaymentPage"
+            component={PaymentPage}
             options={{ headerShown: false }}
           />
         </Stack.Navigator>

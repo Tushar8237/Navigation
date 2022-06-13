@@ -36,7 +36,7 @@ const Activity = ({ navigation }) => {
       </Pressable>
       <Pressable
         style={styles.button}
-        onPress={() => navigation.navigate("Destinations")}
+        onPress={() => navigation.navigate("PaymentPage")}
       >
         <Text style={styles.buttonText}>Destinations</Text>
       </Pressable>
