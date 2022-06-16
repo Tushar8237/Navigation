@@ -6,6 +6,7 @@ const FoodList = (props) => {
   return (
     <View style={styles.body}>
       <Text>foodList</Text>
+      <Text>Item one</Text>
     </View>
   );
 };
